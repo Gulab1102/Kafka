@@ -11,14 +11,14 @@ import org.springframework.stereotype.Service;
 import com.example.kafka.model.User;
 
 @Service
-public class KafkaProducer2 {
+public class KafkaProducerJson {
 	
-	private static final Logger LOGGER=LoggerFactory.getLogger(KafkaProducer2.class);
+	private static final Logger LOGGER=LoggerFactory.getLogger(KafkaProducerJson.class);
 	
 	private KafkaTemplate< String,String> kafkaTemplate;
 	
 
-	public KafkaProducer2(KafkaTemplate<String, String> kafkaTemplate) {
+	public KafkaProducerJson(KafkaTemplate<String, String> kafkaTemplate) {
 		this.kafkaTemplate = kafkaTemplate;
 	}
 	

@@ -10,7 +10,7 @@ public class KafkaTopicConfig {
 	
 	@Bean
 	public NewTopic craeteTopic() {
-		return TopicBuilder.name("testing").build();
+		return TopicBuilder.name("realtime").build();
 	}
 	
 	

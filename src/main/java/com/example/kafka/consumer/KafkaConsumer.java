@@ -22,4 +22,11 @@ public class KafkaConsumer {
 	public void consumejson(User message) {
 		LOGGER.info(String.format("Message received %s",message));
 	}
+	
+	
+	
+	@KafkaListener(topics = "realtime", groupId = "mygroup")
+	public void consumeReal(String message) {
+		LOGGER.info(String.format("Message received %s",message));
+	}
 }

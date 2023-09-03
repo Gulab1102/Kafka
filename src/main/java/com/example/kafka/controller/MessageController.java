@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.kafka.kafkaproducer.KafkaProducer;
-import com.example.kafka.kafkaproducer.KafkaProducer2;
+import com.example.kafka.kafkaproducer.KafkaProducerJson;
 import com.example.kafka.model.User;
 
 @RestController
@@ -18,7 +18,7 @@ public class MessageController {
 	private KafkaProducer kafkaProducer;
 	
 	@Autowired
-	private KafkaProducer2 kafkaProducer2;
+	private KafkaProducerJson kafkaProducer2;
 	
 	@PostMapping("/publish")
 	public ResponseEntity<String> publish(@RequestBody String message){
